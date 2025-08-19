@@ -120,6 +120,9 @@ Este documento especifica as funcionalidades esperadas da aplicação.
 
 ### 4.3 Modelo de casos de uso  
 
+![Modelo UML de caso de uso](assets/imgs/img_doc/useCase.png)
+
+
 Fonte: [Visual Paradigm Online](https://online.visual-paradigm.co)  
 
 ---
