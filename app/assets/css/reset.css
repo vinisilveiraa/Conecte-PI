@@ -1,0 +1,69 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--azul-claro);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+}
+
+.btn {
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--azul-medio);
+    color: var(--azul-escuro);
+}
+
+.btn-secondary {
+    background-color: var(--azul-medio);
+    color: var(--azul-escuro);
+    font-weight: 500;
+}
+
+.btn-secondary:hover {
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
+}
+
+.btn-success {
+    background-color: var(--azul-escuro);
+    font-weight: 500;
+}
+
+.btn-success:hover {
+    background-color: var(--azul-medio);
+    color: var(--preto);
+}

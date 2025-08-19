@@ -1,0 +1,1944 @@
+:root {
+    --azul-claro: #dcedf7;
+    --azul-medio: #A4CDEB;
+    --azul-escuro: #6b8cb1;
+    --branco: #f8f9fa;
+    --branco2: #EBEBEB;
+    --preto: #1F2A33;
+    --preto2: #3D4346;
+    --font-padrao: "Roboto", sans-serif;
+    --font-destaque: "Poppins", sans-serif;
+    --font-decorativa: "Lobster", sans-serif;
+}
+
+/* ==========================================================================================
+==========================================================================================
+CONFIG PARA DESKTOP
+==========================================================================================
+========================================================================================== */
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+header .menu-bg {
+    background-color: var(--azul-escuro);
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    padding: 1.3rem;
+    gap: 4rem;
+}
+
+header .menu .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--preto);
+    font-size: 2.2rem;
+    font-family: var(--font-decorativa);
+    font-weight: 500;
+    gap: 8px;
+}
+
+header .menu .logo a img {
+    width: 45px;
+    height: auto;
+}
+
+header .menu-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+header .menu-nav ul {
+    gap: 1.25rem;
+
+}
+
+header .menu-nav ul li {
+    margin: 0;
+}
+
+header .menu-nav ul li a {
+    color: white;
+    font-weight: 500;
+    padding: .50rem;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+
+}
+
+header .menu-nav ul a:hover {
+    color: var(--preto);
+    border-bottom: 2px solid var(--preto);
+    transition: 0.25s ease;
+}
+
+header .menu-nav .buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+footer {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0px;
+    background-color: var(--azul-escuro);
+
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-family: var(--font-decorativa);
+    font-weight: 500;
+    font-size: 2rem;
+    color: #222222;
+}
+
+footer .colaboradores {
+    display: flex;
+    flex-direction: column;
+    color: #222222;
+    text-align: center;
+}
+
+footer .colaboradores a {
+    color: white;
+}
+
+footer .colaboradores a:hover {
+    color: var(--preto);
+}
+
+footer .apoio {
+    display: flex;
+    flex-direction: column;
+    color: #222222;
+    font-weight: 500;
+}
+
+footer .apoio img {
+    margin: 0 auto;
+    width: 100px;
+}
+/* 
+ ===================
+  Querys
+ ===================
+*/
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+    /* ========== HEADER ========== */
+    header .menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    header .menu-nav {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        text-align: center;
+    }
+
+    header .menu .logo {
+        gap: 0;
+        margin-left: 0;
+    }
+
+    header .menu-nav ul {
+        margin: 1rem 0;
+        gap: 1rem;
+    }
+
+    header .menu-nav ul li a {
+        gap: 0;
+        padding: 0 2rem;
+        background-color: var(--azul-medio);
+        border-radius: 8px;
+        color: white;
+    }
+
+    header .menu-nav .buttons {
+        align-items: center;
+        margin: 1rem 0;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    header .menu-nav .buttons a {
+        padding: 0 2.6rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .auth-user {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .auth-user svg {
+        display: none;
+    }
+
+    .auth-user form,
+    .auth-user a {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .auth-user input[type="submit"],
+    .auth-user .btn {
+        width: 100%;
+    }
+
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header .menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    header .menu-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header .menu .logo {
+        gap: 0;
+        margin-left: 0;
+    }
+
+    header .menu-nav ul {
+        margin: 1rem 0;
+        gap: 1rem;
+    }
+
+    header .menu-nav ul li a {
+        gap: 0;
+        padding: 0 2rem;
+        background-color: var(--azul-medio);
+        border-radius: 8px;
+        color: white;
+        transition: none;
+    }
+
+    header .menu-nav .buttons {
+        align-items: center;
+        margin: 1rem 0;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header .menu-nav .buttons a {
+        padding: 0 2.6rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .auth-user {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .auth-user svg {
+        display: none;
+    }
+
+    .auth-user form,
+    .auth-user a {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .auth-user input[type="submit"],
+    .auth-user .btn {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/*
+==================================================
+    PAGINA HOME
+==================================================
+*/
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.hero .hero-intro {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.hero .hero-intro h1 {
+    font-family: var(--font-destaque);
+    font-weight: bold;
+    font-size: 2.75rem;
+    margin-top: 5rem;
+}
+
+.hero .hero-intro h1 strong {
+    color: var(--azul-escuro);
+}
+
+.hero .hero-intro p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.hero .hero-intro .btn {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.hero .hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 0 auto;
+}
+
+.hero .hero-img img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .hero-intro {
+        width: 90%;
+    }
+
+    .hero .hero-intro h1 {
+        font-size: 2.1rem;
+        margin-top: 2rem;
+    }
+
+    .hero .hero-intro p {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .hero .hero-intro .btn {
+        margin: 0 auto 1rem auto;
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    .hero .hero-img img {
+        max-width: 450px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .hero-intro {
+        width: 90%;
+    }
+
+    .hero .hero-intro h1 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .hero .hero-intro p {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .hero .hero-intro .btn {
+        margin-bottom: 1rem;
+        margin: 0 auto;
+    }
+
+    .hero .hero-img img {
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .alert {
+        font-size: 1rem;
+    }
+}
+
+/*
+==================================================
+SEÇÃO SOBRE
+==================================================
+*/
+
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 5rem;
+}
+
+.sobre .sobre-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre .sobre-info h1 {
+    font-family: var(--font-destaque);
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--preto);
+    margin-bottom: 2rem;
+}
+
+.sobre .sobre-info p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.sobre .sobre-info p strong {
+    color: var(--azul-escuro);
+}
+
+.sobre .sobre-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.sobre .sobre-img div {
+    text-align: center;
+}
+
+.sobre .sobre-img img {
+    border-radius: 10px;
+    width: 75%;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+}
+
+@media (max-width: 480px) {
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre .sobre-info {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .sobre .sobre-info h1 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .sobre .sobre-info p {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .sobre .sobre-img {
+        width: 100%;
+        order: 1;
+    }
+
+    .sobre .sobre-img div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sobre .sobre-img img {
+        border-radius: 20PX;
+        width: 100%;
+    }
+}
+
+
+
+/*
+==================================================
+    PAGINA CADASTRO
+==================================================
+*/
+
+.papeis-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.papeis-container h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.papeis {
+    display: flex;
+    gap: 5rem;
+}
+
+.papeis img {
+    max-width: 400px;
+}
+
+.papeis .papeis-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.papeis .papeis-item h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.papeis .item1 {
+    flex: 1;
+    background-color: var(--azul-escuro);
+}
+
+.papeis .item2 {
+    flex: 1;
+    background-color: var(--azul-medio);
+}
+
+.papeis-item .btn {
+
+    margin-top: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--preto);
+    background-color: var(--azul-claro);
+}
+
+.papeis-item .btn:hover {
+    background-color: #c9e3f3;
+    text-decoration: underline;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+
+
+.como-funciona-container h1 {
+    font-family: var(--font-destaque);
+    font-weight: 600;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.como-funciona {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.como-funciona .card {
+    width: 35vw;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.como-funciona .card .card-img {
+    width: 75px;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--azul-claro);
+}
+
+.como-funciona .card .card-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.como-funciona .card .card-text {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.como-funciona .color1 {
+    background-color: var(--azul-medio);
+}
+
+.como-funciona .color2 {
+    background-color: var(--azul-escuro);
+    color: white;
+    font-weight: 500;
+}
+
+
+.como-funciona-container h1,
+.papeis-container h1 {
+    font-size: 2rem;
+}
+
+.como-funciona,
+.papeis {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.como-funciona .card,
+.papeis .card {
+    width: 100%;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .como-funciona-container h1,
+    .papeis-container h1 {
+        font-size: 2rem;
+    }
+
+    .como-funciona,
+    .papeis {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .como-funciona .card,
+    .papeis .card {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .como-funciona-container h1 {
+        font-size: 2rem;
+    }
+
+    .como-funciona {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 0.5rem;
+        padding: 1rem;
+    }
+
+    .como-funciona .card {
+        width: 100%;
+    }
+}
+
+
+/*
+==================================================
+PAGINA CONTATOS
+==================================================
+*/
+
+.contatos-container {
+    padding: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.contatos-redes {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contatos-email {
+    align-self: stretch;
+}
+
+.contatos-email input {
+    margin-top: 1rem;
+    gap: 0.5rem;
+    padding: 0.3rem auto;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 2px #6b8cb1;
+}
+
+.contatos-email input.btn {
+    border: none;
+    color: #222222;
+    border-radius: 10px;
+}
+
+.contatos-email input.btn:hover {
+    background-color: #6b8cb1;
+}
+
+.contatos-email div a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contatos-outros {
+    display: flex;
+    gap: 2rem;
+}
+
+.contatos-outros div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.contatos-redes span {
+    margin-left: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contatos-redes span a {
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.contatos-redes span a:hover {
+    color: var(--azul-escuro);
+}
+
+.contatos-mapa {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.contatos-mapa iframe {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+}
+
+/*
+==================================================
+    PAGINA FORM-CLIENTE E FORM-CUIDADOR
+==================================================
+*/
+.form-cliente-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-cliente {
+    display: flex;
+    width: 80%;
+    padding: 30px;
+    margin: 3rem;
+    gap: 1rem;
+
+    background-color: var(--azul-escuro);
+    color: white;
+    font-family: var(--font-destaque);
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.form-cliente-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.form-cliente-side img {
+    max-width: 300px;
+}
+
+.form-cliente h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--font-destaque);
+}
+
+.form-cliente-side p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-family: var(--font-padrao);
+}
+
+.form-cliente-side a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.form-cliente .btn {
+    color: var(--preto);
+}
+
+.form-cliente form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.form-cliente div input {
+    gap: 0.5rem;
+    padding: 0.3rem auto;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-cliente-pessoal,
+.form-cliente-endereco,
+.form-cliente-senha,
+.form-cliente-fim {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: .5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid white;
+}
+
+.form-cliente-pessoal>div,
+.form-cliente-endereco>div,
+.form-cliente-senha>div,
+.form-cliente-fim>div {
+    flex: 1 1 48%;
+    min-width: 200px;
+}
+
+.form-cliente-fim {
+    border: none;
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .form-cliente {
+        width: 100%;
+        padding: 30px;
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    .form-cliente-side h1 {
+        font-size: 2.7rem;
+    }
+
+    .form-cliente-side p {
+        font-size: 1.5rem;
+    }
+
+    .form-cliente-side img {
+        max-width: 300px;
+    }
+    
+    /* ajuste para as fontes do formulario */
+    .form,
+    .btn-cliente {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .form-cliente {
+        width: 100%;
+        padding: 30px;
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    .form-cliente-side img {
+        max-width: 260px;
+    }
+}
+
+/*
+==================================================
+    CUIDADOR-UPDATE
+==================================================
+*/
+
+.campo-dados {
+    padding: 2rem;
+}
+
+.campo-foto {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-curriculo-celular {
+    display: none;
+}
+
+.campo-curriculo {
+    display: block;
+}
+
+
+/*
+==================================================
+    PAGINA LOGIN
+==================================================
+*/
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 10px;
+    padding: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--azul-escuro);
+    color: white;
+    font-family: var(--font-destaque);
+    margin: 3rem auto;
+}
+
+.form-login h1 {
+    text-align: center;
+}
+
+.alert {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+    
+}
+
+@media (max-width: 480px) {
+    .form-login {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+}
+
+/*
+==================================================
+    PAGINA DASHBOARD-CUIDADOR
+==================================================
+*/
+.dashboard-cuidador {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.card {
+    width: 30rem;
+}
+
+.show-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    border: none;
+    /* padding: 2rem 5rem; */
+}
+
+.show-data-mobile {
+    display: none;
+}
+
+.show-data iframe {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+/*
+==================================================
+    PAGINA DASHBOARD-CLIENTE
+==================================================
+*/
+.dashboard-cliente-container {
+    padding: 0rem 1rem;
+}
+
+.dashboard-cliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 30rem;
+    background-color: var(--azul-escuro);
+    color: white;
+    border: none;
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+
+/* --------------------------------------------- */
+
+.lista-cuidadores-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.lista-cuidadores {
+    width: 25rem;
+}
+
+.lista-cuidadores img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.lista-cuidadores .card-body {
+    background-color: var(--azul-escuro);
+    padding: 1rem;
+    border: 1px solid var(--azul-escuro);
+}
+
+.lista-cuidadores .card-body .botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.botoes-celular {
+    display: none;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+
+
+}
+@media (max-width: 480px) {
+
+    .form-login {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+
+    /*
+==================================================
+PAGINA DASHBOARD-CLIENTE CELULARES @MEDIA QUERY
+==================================================
+*/
+    .dashboard-cliente-container {
+        width: 100%;
+    }
+
+    .dashboard-cliente .img-user {
+        flex-wrap: wrap;
+    }
+
+    .dashboard-cliente .img-user h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* --------------------------------------------- */
+
+    .lista-cuidadores-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista-cuidadores {
+        width: 100%;
+    }
+
+    .lista-cuidadores .card-body .botoes {
+        display: none;
+    }
+
+    .lista-cuidadores .card-body .botoes-celular {
+        display: block;
+    }
+
+    /*
+==================================================
+PAGINA DASHBOARD-CUIDADOR CELULARES @MEDIA QUERY
+==================================================
+*/
+    .dashboard-cuidador {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 20rem;
+    }
+
+    .show-data {
+        display: none;
+    }
+
+    .show-data-mobile {
+        display: block;
+        width: 90%;
+    }
+
+    /* ===========================================================
+   PAGINA CUIDADOR-UPDATE CELULARES @MEDIA QUERY
+   =========================================================== */
+
+    .campo-curriculo {
+        display: none;
+    }
+
+    .campo-curriculo-celular {
+        display: block;
+    }
+
+}
+
+
+/* ======================================================================================================
+ PAGINA SOBRE-NOS
+====================================================================================================== */
+.sobre-nos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.4rem;
+}
+
+.card {
+    margin: 2rem 0 2rem 0;
+}
+
+.card-title {
+    text-align: center
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card-text a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.card-img-top {
+    max-height: 16rem;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: 83%;
+    margin: 0 auto;
+}
+
+
+.text-container h1 {
+    color: var(--azul-escuro);
+    font-size: 4rem;
+    margin-top: 2rem
+}
+
+.text-container p {
+    font-size: 1.2rem;
+}
+
+/* ======================================================================================================================================================
+    CONFIG PRA CELULARES
+======================================================================================================================================================
+====================================================================================================================================================== */
+
+@media (max-width: 480px) {
+
+    header .menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    header .menu-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header .menu .logo {
+        gap: 0;
+        margin-left: 0;
+    }
+
+    header .menu-nav ul {
+        margin: 1rem 0;
+        gap: 1rem;
+    }
+
+    header .menu-nav ul li a {
+        gap: 0;
+        padding: 0 2rem;
+        background-color: var(--azul-medio);
+        border-radius: 8px;
+        color: white;
+        transition: none;
+    }
+
+    header .menu-nav .buttons {
+        align-items: center;
+        margin: 1rem 0;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header .menu-nav .buttons a {
+        padding: 0 2.6rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .auth-user {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .auth-user svg {
+        display: none;
+    }
+
+    .auth-user form,
+    .auth-user a {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .auth-user input[type="submit"],
+    .auth-user .btn {
+        width: 100%;
+    }
+
+
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /*
+==================================================
+    PAGINA HOME CELULARES @MEDIA QUERY
+==================================================
+*/
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .hero-intro {
+        width: 90%;
+    }
+
+    .hero .hero-intro h1 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .hero .hero-intro p {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .hero .hero-intro .btn {
+        margin-bottom: 1rem;
+        margin: 0 auto;
+    }
+
+    .hero .hero-img img {
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .alert {
+        font-size: 1rem;
+    }
+
+    /*
+==================================================
+    SEÇÃO SOBRE CELULARES @MEDIA QUERY
+==================================================
+*/
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre .sobre-info {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .sobre .sobre-info h1 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .sobre .sobre-info p {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .sobre .sobre-img {
+        width: 100%;
+        order: 1;
+    }
+
+    .sobre .sobre-img div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sobre .sobre-img img {
+        border-radius: 20PX;
+        width: 100%;
+
+    }
+
+
+
+    /*
+==================================================
+    PAGINA CADASTRO CELULARES @MEDIA QUERY
+==================================================
+*/
+
+
+    .como-funciona-container h1 {
+        font-size: 2rem;
+    }
+
+    .como-funciona {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 0.5rem;
+        padding: 1rem;
+    }
+
+    .como-funciona .card {
+        width: 100%;
+    }
+
+    /* /////////////////////////////////////////////////////////// */
+    /* /////////////////////////////////////////////////////////// */
+
+    .papeis-container {
+        flex-direction: column;
+    }
+
+    .papeis-container h1 {
+        font-size: 2rem;
+    }
+
+    .papeis {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0rem;
+    }
+
+    /*
+==================================================
+    PAGINA CONTATOS CELULARES @MEDIA QUERY
+==================================================
+*/
+
+
+    .contatos-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .contatos-redes {
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .contatos-redes span {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .contatos-redes span a {
+        color: var(--preto);
+        text-decoration: none;
+    }
+
+    .contatos-redes span a:hover {
+        color: var(--azul-escuro);
+    }
+
+    .contatos-mapa {
+        width: 100%;
+    }
+
+
+    /*
+==================================================
+    PAGINA CADASTRO CELULARES @MEDIA QUERY
+==================================================
+*/
+
+    .form-cliente {
+        width: 100%;
+        padding: 30px;
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    .form-cliente-side img {
+        max-width: 260px;
+    }
+
+    /*
+==================================================
+PAGINA LOGIN CELULARES @MEDIA QUERY
+==================================================
+*/
+
+    .form-login {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+
+    /*
+==================================================
+PAGINA DASHBOARD-CLIENTE CELULARES @MEDIA QUERY
+==================================================
+*/
+    .dashboard-cliente-container {
+        width: 100%;
+    }
+
+    .dashboard-cliente .img-user {
+        flex-wrap: wrap;
+    }
+
+    .dashboard-cliente .img-user h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* --------------------------------------------- */
+
+    .lista-cuidadores-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista-cuidadores {
+        width: 100%;
+    }
+
+    .lista-cuidadores .card-body .botoes {
+        display: none;
+    }
+
+    .lista-cuidadores .card-body .botoes-celular {
+        display: block;
+    }
+
+    /*
+==================================================
+PAGINA DASHBOARD-CUIDADOR CELULARES @MEDIA QUERY
+==================================================
+*/
+    .dashboard-cuidador {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 20rem;
+    }
+
+    .show-data {
+        display: none;
+    }
+
+    .show-data-mobile {
+        display: block;
+        width: 90%;
+    }
+
+    /* ===========================================================
+   PAGINA CUIDADOR-UPDATE CELULARES @MEDIA QUERY
+   =========================================================== */
+
+    .campo-curriculo {
+        display: none;
+    }
+
+    .campo-curriculo-celular {
+        display: block;
+    }
+
+
+}
+
+/*
+==================================================
+    PAGINA SOBRE-NOS CELULARES @MEDIA QUERY
+==================================================
+*/
+
+.sobre-nos-container {
+    gap: 1.5rem;
+}
+
+.card {
+    margin: 0;
+}
+
+.text-container h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.text-container p {
+    font-size: 1rem;
+}
+
+/*fim da media query de celular*/
+
+
+/*
+======================================================================================================================================================
+======================================================================================================================================================
+CONFIG TABLET    MEDIAS QUERY TABLET
+======================================================================================================================================================
+======================================================================================================================================================
+*/
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+    /* ========== HEADER ========== */
+    header .menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    header .menu-nav {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        text-align: center;
+    }
+
+    header .menu .logo {
+        gap: 0;
+        margin-left: 0;
+    }
+
+    header .menu-nav ul {
+        margin: 1rem 0;
+        gap: 1rem;
+    }
+
+    header .menu-nav ul li a {
+        gap: 0;
+        padding: 0 2rem;
+        background-color: var(--azul-medio);
+        border-radius: 8px;
+        color: white;
+    }
+
+    header .menu-nav .buttons {
+        align-items: center;
+        margin: 1rem 0;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    header .menu-nav .buttons a {
+        padding: 0 2.6rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .auth-user {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .auth-user svg {
+        display: none;
+    }
+
+    .auth-user form,
+    .auth-user a {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .auth-user input[type="submit"],
+    .auth-user .btn {
+        width: 100%;
+    }
+
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* =========================================================
+    PÁGINA HOME
+    ========================================================= */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .hero-intro {
+        width: 90%;
+    }
+
+    .hero .hero-intro h1 {
+        font-size: 2.1rem;
+        margin-top: 2rem;
+    }
+
+    .hero .hero-intro p {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .hero .hero-intro .btn {
+        margin: 0 auto 1rem auto;
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    .hero .hero-img img {
+        max-width: 450px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* =========================================================
+    PÁGINA SOBRE
+    ========================================================= */
+
+
+    /* =========================================================
+    COMO FUNCIONA / PAPÉIS
+    ========================================================= */
+    .como-funciona-container h1,
+    .papeis-container h1 {
+        font-size: 2rem;
+    }
+
+    .como-funciona,
+    .papeis {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .como-funciona .card,
+    .papeis .card {
+        width: 100%;
+    }
+
+    /* =========================================================
+    CONTATOS
+    ========================================================= */
+    .contatos-container {
+        flex-direction: column;
+        padding: 1.5remrem;
+    }
+
+    .contatos-redes {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .contatos-redes span {
+        font-size: 1.1rem;
+    }
+
+    .contatos-mapa {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .contatos-mapa iframe {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    /* =========================================================
+    FORMULÁRIO DE CADASTRO
+    ========================================================= */
+    .form-cliente {
+        width: 100%;
+        padding: 30px;
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    .form-cliente-side h1 {
+        font-size: 2.7rem;
+    }
+
+    .form-cliente-side p {
+        font-size: 1.5rem;
+    }
+
+    .form-cliente-side img {
+        max-width: 300px;
+    }
+
+    /* ajuste para as fontes do formulario */
+    .form,
+    .btn-cliente {
+        font-size: 1.5rem;
+    }
+
+
+
+    /* =========================================================
+    DASHBOARD CLIENTE
+    ========================================================= */
+
+    /* ==========  ========== */
+    .dashboard-cliente-container {
+        width: 100%;
+    }
+
+    .dashboard-cliente .img-user {
+        flex-wrap: wrap;
+    }
+
+    .dashboard-cliente .img-user h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .lista-cuidadores-container {
+        flex-direction: column;
+    }
+
+    .lista-cuidadores {
+        width: 100%;
+    }
+
+    .lista-cuidadores .card-body .botoes {
+        display: none;
+    }
+
+    .lista-cuidadores .card-body .botoes-celular {
+        display: block;
+    }
+
+    /* =========================================================
+    DASHBOARD CUIDADOR
+    ========================================================= */
+    .dashboard-cuidador {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .box-dados {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .img-user img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .dados ul {
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .dados a {
+        margin-top: 1rem;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .show-data {
+        display: none;
+    }
+
+    .show-data-mobile {
+        display: block;
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .show-data-mobile a {
+        font-size: 1.5rem;
+    }
+
+    /* =========================================================
+    CUIDADOR UPDATE
+    ========================================================= */
+    .campo-curriculo {
+        display: none;
+    }
+
+    .campo-curriculo-celular {
+        display: block;
+    }
+
+    .campo-dados {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+/*fim da media query de tablet*/
