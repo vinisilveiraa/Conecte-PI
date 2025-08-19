@@ -120,7 +120,7 @@ Este documento especifica as funcionalidades esperadas da aplicação.
 
 ### 4.3 Modelo de casos de uso  
 
-![Modelo UML de caso de uso](assets/imgs/img_doc/useCase.png)
+![Modelo UML de caso de uso](app/assets/imgs/img_doc/useCase.png)
 
 
 Fonte: [Visual Paradigm Online](https://online.visual-paradigm.co)  
@@ -129,7 +129,7 @@ Fonte: [Visual Paradigm Online](https://online.visual-paradigm.co)
 
 ## 5. REGRAS DE NEGÓCIO  
 
-*Imagem do modelo Canvas*  
+  ![Modelo UML de caso de uso](app/assets/imgs/img_doc/modeloCanva.png)
 
 Fonte: [Sebrae Canvas](https://canvas-apps.pr.sebrae.com.br)  
 
