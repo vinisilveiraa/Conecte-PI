@@ -1,7 +1,10 @@
-@extends('Layouts.main_layout')
-@section('title', 'Home')
+<?php
+require_once BASE_DIR.'/config.php';
+$titulo = APP_NAME;
+$css_pagina = CSS."exemplo.css";
+require_once "layouts/header.php";
 
-@section('content')
+?>
 
     <div class="hero">
 
@@ -24,10 +27,11 @@
                 e segura. Nossa plataforma simplifica a busca e a conexão, priorizando o cuidado humanizado e a
                 confiança entre as partes.
             </p>
-            <a href="{{ route('cadastro') }}"class="btn btn-success">Quero saber mais</a>
+            <a href="#"class="btn btn-success">Quero saber mais</a>
         </div>
         <div class="hero-img">
             <img src="{{ asset('assets/imgs/hero4.png') }}" alt="Imagem de fundo">
+            <img src="IMAGE.'/hero4.png" alt="Imagem de fundo">
         </div>
     </div>
 
@@ -51,4 +55,4 @@
 
 
 
-@endsection
+<?php include "layouts/footer.php"; ?>

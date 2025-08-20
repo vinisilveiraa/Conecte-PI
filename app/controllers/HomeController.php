@@ -3,6 +3,6 @@
 class HomeController{
 
     public static function index(){
-        include "app/view/login.php";
+        require_once "app/views/login.php";
     }
 }

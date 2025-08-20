@@ -1,9 +1,10 @@
+<?php
+require_once BASE_DIR.'/config.php';
+$titulo = APP_NAME;
+$css_pagina = CSS."exemplo.css";
+require_once "layouts/header.php";
 
-@extends('Layouts.main_layout')
-
-@section('title', 'Cadastro')
-
-@section('content')
+?>
     <div class="form-cliente-container">
         <section class="form-cliente">
 
@@ -15,7 +16,6 @@
             </div>
 
             <form action="{{ route('form.cuidador.submit') }}" method="post" enctype="multipart/form-data">
-                @csrf
 
                 <input type="hidden"name="tipo" value="cuidador">
 
@@ -144,4 +144,4 @@
 
     </div>
 
-@endsection
+<?php include "layouts/footer.php"; ?>

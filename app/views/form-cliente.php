@@ -1,20 +1,11 @@
-@php
-    if (Auth::user()) {
-        if (Auth::user()->tipo == 'cliente') {
-            return redirect()->route('dashboard.cliente');
-        }
+<?php
+require_once BASE_DIR.'/config.php';
+$titulo = APP_NAME;
+$css_pagina = CSS."exemplo.css";
+require_once "layouts/header.php";
 
-        return redirect()->route('dashboard.cuidador');
-    }
-@endphp
+?>
 
-
-
-@extends('Layouts.main_layout')
-
-@section('title', 'Cadastro')
-
-@section('content')
     <div class="form-cliente-container">
         <section class="form-cliente">
 
@@ -26,7 +17,6 @@
             </div>
 
             <form action="{{ route('form.cliente.submit') }}" method="post"enctype="multipart/form-data">
-                @csrf
 
                 <input type="hidden"name="tipo" value="cliente">
 
@@ -141,7 +131,7 @@
                         @enderror
                     </div>
                 </div>
-                {{-- Botão de envio --}}
+               <!-- Botão de envio -->
                 <div class="mt-4 ">
                     <input type="submit" class="btn btn-secondary form-control btn-cliente" value="Cadastrar-se">
                 </div>
@@ -152,4 +142,4 @@
 
     </div>
 
-@endsection
+<?php include "layouts/footer.php"; ?>
