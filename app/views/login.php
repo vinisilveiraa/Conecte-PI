@@ -1,8 +1,9 @@
 <?php
-include "../../config.php";
+require_once BASE_DIR.'/config.php';
+echo BASE_DIR;
 $titulo = APP_NAME;
-$css_pagina = "exemplo.css";
-include "layouts/header.php";
+$css_pagina = CSS."exemplo.css";
+require_once "layouts/header.php";
 
 ?>
 
