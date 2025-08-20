@@ -1,8 +1,10 @@
-@extends('Layouts.main_layout')
-@section('title', 'Cadastro')
+<?php
+require_once BASE_DIR.'/config.php';
+$titulo = APP_NAME;
+$css_pagina = CSS."exemplo.css";
+require_once "layouts/header.php";
 
-
-@section('content')
+?>
 
     <section class="papeis-container">
         <h1>A ajuda certa, no momento certo!</h1>
@@ -81,6 +83,6 @@
         </section>
     </div>
 
-@endsection
+<?php include "layouts/footer.php"; ?>
 
 
