@@ -1,0 +1,145 @@
+/*
+=================================
+ROOT
+=================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+:root {
+    /** CORES **/
+    --azul-escuro: #5A7CA0; /* titulos */
+    --azul-medio: #7997B9; /* botoes principais */
+    --azul-claro: #D1E4F5; /* fundos */
+    
+    --verde: #7FC7A7; /* cor de sucesso */
+    --amarelo: #F8A864; /* cor de alerta */
+
+    --branco: #F8F9FA; /* fundo principal */
+    --branco2: #EBEBEB; /* fundo secundario */
+
+    --preto: #1F2A33; /* fonte p principal */
+    --preto2: #3D4346; /* fonte p secundaria */
+
+    /** FONTES **/
+    --font-padrao: "Nunito", sans-serif;
+    /* peso 400-600*/
+    --font-destaque: "Poppins", sans-serif;
+    /* peso bold(700) */
+    --font-display: "Righteous", sans-serif;
+    /* fonte da LOGO, nao repetir */
+
+    /** OUTROS **/
+    --radius: 8px; /* radius padrao */
+    --transition: 0.3s ease-in-out; /* transicao padrao */
+
+
+    
+    /* TODO: ABAIXO A SER DEFINIDO AINDA */
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* sombra padrao */
+    --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* sombra ao passar o mouse */
+    --shadow-active: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* sombra ao clicar */
+}
+
+/* 
+=================================
+    ! TIPOGRAFIA
+================================= 
+*/
+
+body {
+    font-family: var(--font-padrao);
+    color: var(--preto2);
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-destaque);
+    color: var(--preto1);
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.75rem; font-weight: 700;}
+h2 { font-size: 2.25rem; font-weight: 600; }
+h3 { font-size: 1.75rem; font-weight: 500; }
+h4 { font-size: 1.5rem; font-weight: 500; }
+
+p { margin-bottom: 1em; }
+
+a {
+    font-weight: 600;
+    color: var(--azul-escuro);
+    text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+strong {
+    font-weight: 700;
+    color: var(--azul-escuro);
+}
+
+button {
+    padding: 0.5em 1.75em;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    
+    font-family: var(--font-padrao);
+    font-size: 1rem;
+    font-weight: 600;
+
+    background-color: var(--amarelo);
+    color: var(--branco);
+    transition: background var(--transition);
+}
+
+button:hover {
+    background-color: var(--verde);
+}
+
+button:active {
+    scale: 0.99;
+    transition: 0.1s ease-in-out;
+}
+
+
+/*
+=================================
+    ! LAYOUT
+================================= 
+*/
+
+.container {
+    width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/*
+=================================
+    ! MEDIA QUERIES
+================================= 
+*/
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
